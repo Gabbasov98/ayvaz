@@ -1,0 +1,797 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class='header'>
+    <section class='header-top'>
+        <div class='container'>
+            <div class='header-top__inner'>
+                <button class="header__burger mbtn btn-blue"></button>
+                <a href="" class="header__logo">
+                    <div class="header__logo-img">
+                        <img src="img/LOGO.png" alt="">
+                    </div>
+                    <div class="header__logo-text">Производим сильфонные компенсаторы с 1970 года</div>
+                </a>
+
+                <div class="header__contacts">
+                    <a href="mailto:info@ayvaz-russia.ru" class="header__contacts-item">info@ayvaz-russia.ru</a>
+                    <a href="tel:83433126740" class="header__contacts-item">8 343 312-67-40</a>
+                </div>
+
+                <div class="header__socials">
+                    <a href="" class="header__socials-item">
+                        <img src="img/telegram.svg" alt="">
+                    </a>
+                    <a href="" class="header__socials-item">
+                        <img src="img/whatsapp.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="header__consult">
+                    <button class="header__consult-btn">
+                        <span class="header__consult-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.21922 1H3C1.89543 1 1 1.89543 1 3V5C1 10.5228 5.47715 15 11 15H13C14.1046 15 15 14.1046 15 13V11.618C15 11.2393 14.786 10.893 14.4472 10.7236L12.0313 9.51564C11.487 9.24349 10.8278 9.51652 10.6354 10.0938L10.3376 10.9871C10.1447 11.5658 9.55118 11.9102 8.95309 11.7906C6.55929 11.3119 4.68814 9.44071 4.20938 7.04691C4.08976 6.44882 4.43422 5.85526 5.01286 5.66238L6.12149 5.29284C6.61721 5.1276 6.90214 4.60855 6.7754 4.10162L6.18937 1.75746C6.07807 1.3123 5.67809 1 5.21922 1Z" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                        <span class="header__consult-text">Получить консультацию</span>
+                    </button>
+                    <div class="header__consult-time">по будням c 9:00 до 18:00</div>
+                </div>
+
+                <button class="header__cart header__btn mbtn">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 19.25C7.48325 19.25 7.875 18.8582 7.875 18.375C7.875 17.8918 7.48325 17.5 7 17.5C6.51675 17.5 6.125 17.8918 6.125 18.375C6.125 18.8582 6.51675 19.25 7 19.25Z" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.625 19.25C17.1082 19.25 17.5 18.8582 17.5 18.375C17.5 17.8918 17.1082 17.5 16.625 17.5C16.1418 17.5 15.75 17.8918 15.75 18.375C15.75 18.8582 16.1418 19.25 16.625 19.25Z" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1.79297 1.7937H3.54297L5.87047 12.6612C5.95585 13.0592 6.17731 13.415 6.49672 13.6673C6.81613 13.9197 7.21351 14.0528 7.62047 14.0437H16.178C16.5762 14.0431 16.9624 13.9066 17.2726 13.6568C17.5828 13.407 17.7986 13.0589 17.8842 12.67L19.328 6.1687H4.47922" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class='header-bottom'>
+        <div class='container'>
+            <div class='header-bottom__inner'>
+                <button class="header__catalog-btn mbtn btn-blue">
+                    <i></i>
+                    <span>Каталог</span>
+                 </button>
+
+                <nav class="nav">
+                    <a href="" class="nav__link">Товары в наличии</a>
+                    <a href="" class="nav__link">О компании</a>
+                    <a href="" class="nav__link">Выполненные проекты</a>
+                    <a href="" class="nav__link">Доставка и оплата</a>
+                    <a href="" class="nav__link">Контакты</a>
+                </nav>
+
+                <div class="header__search">
+                    <input type="text" placeholder="Введите название товара">
+                    <button class="header__search-btn header__btn mbtn">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 19L15 15" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="header__mob">
+                    <a href="tel:83433126740" class="header__mob-phone">8 343 312-67-40</a>
+                    <a href="mailto:info@ayvaz-russia.ru" class="header__mob-mail">info@ayvaz-russia.ru</a>
+                    <div class="header__mob-socials">
+                        <a href="" class="header__mob-socials-item">
+                            <img src="img/telegram.svg" alt="">
+                        </a>
+                        <a href="" class="header__mob-socials-item">
+                            <img src="img/whatsapp.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<section class='header-catalog'>
+    <div class='container'>
+        <button class="header-catalog__back">
+            <img src="img/arrow-prev.svg" alt="">
+            <span>Назад к основному меню</span>
+        </button>
+        <div class='header-catalog__inner'>
+            <div class="header-catalog__group">
+                <div class="header-catalog__title">
+                    <a href="" class="header-catalog__title-link">Сильфонные компенсаторы для систем отопления</a>
+                    <button class="header-catalog__toggler">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0664 3.7334L6.99974 10.2667L0.933073 3.7334" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-catalog__links">
+                    <a href="" class="header-catalog__link">Под приварку HP-50</a>
+                    <a href="" class="header-catalog__link">Муфтовый HPR-50</a>
+                </div>
+            </div>
+            <div class="header-catalog__group">
+                <div class="header-catalog__title">
+                    <a href="" class="header-catalog__title-link">Компенсаторы сильфонные осевые</a>
+                    <button class="header-catalog__toggler">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0664 3.7334L6.99974 10.2667L0.933073 3.7334" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-catalog__links">
+                    <a href="" class="header-catalog__link">Фланцевый КСО</a>
+                    <a href="" class="header-catalog__link">Под приварку КСО</a>
+                </div>
+            </div>
+            <div class="header-catalog__group">
+                <div class="header-catalog__title">
+                    <a href="" class="header-catalog__title-link">Компенсаторы сдвиговые</a>
+                    <button class="header-catalog__toggler">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0664 3.7334L6.99974 10.2667L0.933073 3.7334" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-catalog__links">
+                    <a href="" class="header-catalog__link">Фланцевый</a>
+                    <a href="" class="header-catalog__link">Под приварку тип YA</a>
+                </div>
+            </div>
+            <div class="header-catalog__group">
+                <div class="header-catalog__title">
+                    <a href="" class="header-catalog__title-link">Компенсаторы СКУ ППУ (ПЭ\ОЦ)</a>
+                    <button class="header-catalog__toggler">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0664 3.7334L6.99974 10.2667L0.933073 3.7334" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-catalog__links">
+                    <a href="" class="header-catalog__link">СКУ в ППМ изоляции</a>
+                    <a href="" class="header-catalog__link">2СКУ.М.1</a>
+                    <a href="" class="header-catalog__link">СКУ.М.1</a>
+                    <a href="" class="header-catalog__link">2СКУ.ППУ</a>
+                    <a href="" class="header-catalog__link">СКУ.ППУ</a>
+                </div>
+            </div>
+            <div class="header-catalog__group">
+                <div class="header-catalog__title">
+                    <a href="" class="header-catalog__title-link">Антивибрационные компенсаторы (резиновые)</a>
+                    <button class="header-catalog__toggler">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0664 3.7334L6.99974 10.2667L0.933073 3.7334" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-catalog__links">
+                    <a href="" class="header-catalog__link">Свободные фланцы и тяги MKTY-30</a>
+                    <a href="" class="header-catalog__link">Фланцевые компенсаторы LKA-10</a>
+                    <a href="" class="header-catalog__link">Муфтовые компенсаторы DKK-10</a>
+                </div>
+            </div>
+            <div class="header-catalog__group">
+                <div class="header-catalog__title">
+                    <a href="" class="header-catalog__title-link">Компенсаторы универсальные</a>
+                    <button class="header-catalog__toggler">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0664 3.7334L6.99974 10.2667L0.933073 3.7334" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-catalog__links">
+                    <a href="" class="header-catalog__link">Фланцевый тип UN</a>
+                    <a href="" class="header-catalog__link">Под приварку тип UN</a>
+                </div>
+            </div>
+            <div class="header-catalog__group">
+                <div class="header-catalog__title">
+                    <a href="" class="header-catalog__title-link">Судовые компенсаторы </a>
+                    <button class="header-catalog__toggler">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0664 3.7334L6.99974 10.2667L0.933073 3.7334" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-catalog__links">
+                    <a href="" class="header-catalog__link">Осевые ЕК</a>
+                    <a href="" class="header-catalog__link">Универсальные фланцевые</a>
+                </div>
+            </div>
+            <div class="header-catalog__group">
+                <div class="header-catalog__title">
+                    <a href="" class="header-catalog__title-link">Компенсаторы угловые</a>
+                    <button class="header-catalog__toggler">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0664 3.7334L6.99974 10.2667L0.933073 3.7334" stroke="#015AAA" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-catalog__links">
+                    <a href="" class="header-catalog__link">Шарнирный тип AC-HT</a>
+                    <a href="" class="header-catalog__link">Шарнирный тип AC-HT2</a>
+                    <a href="" class="header-catalog__link">Карданный тип AC-GT </a>
+                    <a href="" class="header-catalog__link">Карданный тип AC-GT2 </a>
+                </div>
+            </div>
+            <div class="header-catalog__group">
+                <div class="header-catalog__title">
+                    <a href="" class="header-catalog__title-link">Компенсаторы разгруженные </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="header-catalog__bg"></div>
+        <main class="content">
+
+            <section class='main'>
+                <div class='container'>
+                    <div class='main__inner'>
+                        <div class="main__info">
+                            <h1 class="main__title display1">Проектирование, производство и поставка сильфонных компенсаторов</h1>
+                            <a href="" class="main__link mbtn btn-white">Перейти в каталог</a>
+                        </div>
+                        <div class="main__img">
+                            <img src="img/main-img.webp" alt="">
+                        </div>
+                    </div>
+
+                    <div class="advantages">
+                        <div class="advantages__item">
+                            <div class="advantages__title">В наличии</div>
+                            <div class="advantages__desc">Более 3000 позиций на собственном складе</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__title">Проектируем</div>
+                            <div class="advantages__desc">И производим компенсаторы под индивидуальные задачи</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__title">По всей России</div>
+                            <div class="advantages__desc">Доставляем любыми транспортными компаниями</div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__title">Отсрочка платежа</div>
+                            <div class="advantages__desc">Для постоянных клиентов до 45 дней</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='catalog-index'>
+                <div class='container'>
+                    <div class='catalog-index__top'>
+                        <div class="catalog-index__title display2">Каталог компенсаторов</div>
+                        <a href="" class="catalog-index__link catalog-index__link--dekstop text-link">
+                            <span>Посмотреть все товары</span>
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66602 13.5667L11.1993 7.50002L4.66602 1.43335" stroke="#015AAA" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="catalog-index__items">
+                        <a href="" class="catalog-card">
+                            <div class="catalog-card__top">
+    <span>Сильфонные компенсаторы для систем отопления</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 14L12 7.5L5 1" stroke="#000B15" stroke-linecap="round"/>
+    </svg>
+</div>
+<div class="catalog-card__img">
+    <img src="img/catalog.webp" alt="">
+</div>
+                        </a>
+                        <a href="" class="catalog-card">
+                            <div class="catalog-card__top">
+    <span>Компенсаторы сдвиговые</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 14L12 7.5L5 1" stroke="#000B15" stroke-linecap="round"/>
+    </svg>
+</div>
+<div class="catalog-card__img">
+    <img src="img/catalog2.webp" alt="">
+</div>
+                        </a>
+                        <a href="" class="catalog-card">
+                            <div class="catalog-card__top">
+    <span>Компенсаторы сильфонные осевые</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 14L12 7.5L5 1" stroke="#000B15" stroke-linecap="round"/>
+    </svg>
+</div>
+<div class="catalog-card__img">
+    <img src="img/catalog3.webp" alt="">
+</div>
+                        </a>
+                        <a href="" class="catalog-card">
+                            <div class="catalog-card__top">
+    <span>Компенсаторы СКУ ППУ (ПЭОЦ)</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 14L12 7.5L5 1" stroke="#000B15" stroke-linecap="round"/>
+    </svg>
+</div>
+<div class="catalog-card__img">
+    <img src="img/catalog4.webp" alt="">
+</div>
+                        </a>
+                        <a href="" class="catalog-card">
+                            <div class="catalog-card__top">
+    <span>Антивибрационные (резиновые) компенсаторы</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 14L12 7.5L5 1" stroke="#000B15" stroke-linecap="round"/>
+    </svg>
+</div>
+<div class="catalog-card__img">
+    <img src="img/catalog5.webp" alt="">
+</div>
+                        </a>
+                        <a href="" class="catalog-card">
+                            <div class="catalog-card__top">
+    <span>Компенсаторы универсальные</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 14L12 7.5L5 1" stroke="#000B15" stroke-linecap="round"/>
+    </svg>
+</div>
+<div class="catalog-card__img">
+    <img src="img/catalog6.webp" alt="">
+</div>
+                        </a>
+                        <a href="" class="catalog-card">
+                            <div class="catalog-card__top">
+    <span>Компенсаторы разгруженные</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 14L12 7.5L5 1" stroke="#000B15" stroke-linecap="round"/>
+    </svg>
+</div>
+<div class="catalog-card__img">
+    <img src="img/catalog7.webp" alt="">
+</div>
+                        </a>
+                        <a href="" class="catalog-card">
+                            <div class="catalog-card__top">
+    <span>Компенсаторы угловые</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 14L12 7.5L5 1" stroke="#000B15" stroke-linecap="round"/>
+    </svg>
+</div>
+<div class="catalog-card__img">
+    <img src="img/catalog8.webp" alt="">
+</div>
+                        </a>
+                        <a href="" class="catalog-card">
+                            <div class="catalog-card__top">
+    <span>Судовые компенсаторы</span>
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 14L12 7.5L5 1" stroke="#000B15" stroke-linecap="round"/>
+    </svg>
+</div>
+<div class="catalog-card__img">
+    <img src="img/catalog9.webp" alt="">
+</div>
+                        </a>
+                        <a href="" class="catalog-index__link catalog-index__link--mob text-link">
+                            <span>Посмотреть все товары</span>
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66602 13.5667L11.1993 7.50002L4.66602 1.43335" stroke="#015AAA" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <div class="catalog-consult">
+                            <div class="catalog-consult__info">
+                                <div class="catalog-consult__title display2">Проектируем и производим на заказ</div>
+                                <div class="catalog-consult__desc">От одной штуки до серии. С соблюдением всех требований стандартов качества.</div>
+                                <button class="catalog-consult__btn mbtn btn-white">Оставить заявку</button>
+                            </div>
+                            <div class="catalog-consult__img">
+                                <img src="img/consult.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult'>
+                <div class='container'>
+    <div class='consult__inner'>
+        <div class="consult__info">
+            <div class="consult__title display2">Бесплатный подбор компенсаторов</div>
+            <div class="consult__desc">После отправки опросного листа, инженер подберёт компенсатор из готовых решений или предложим индивидуальное проектирование в зависимости от задачи.</div>
+            <div class="consult__nav">
+                <button class="consult__btn mbtn btn-blue">Заполнить опросный лист</button>
+                <div class="consult__contacts">
+                    <div class="consult__contacts-wrap">
+                        <a href="tel:+73433126740" class="consult__phone">+7 343 312-67-40</a>
+                        <div class="consult__socials">
+                            <a href="" class="consult__socials-item">
+                                <img src="img/whatsapp2.svg" alt="">
+                            </a>
+                            <a href="" class="consult__socials-item">
+                                <img src="img/telegram2.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="consult__hint">или свяжитесь с нами самостоятельно</div>
+                </div>
+            </div>
+            <div class="consult__bottom">
+                <div class="consult__name">Ринат</div>
+                <div class="consult__prof">Инженер компании Евроснаб</div>
+            </div>
+        </div>
+        <div class="consult__img">
+            <img src="img/man.webp" alt="">
+        </div>
+    </div>
+</div>
+            </section>
+
+            <section class='about-index'>
+                <div class='container'>
+                    <div class="about-index__info">
+                        <div class='about-index__top'>
+                            <div class="about-index__title display2">Айваз — гарантия качества</div>
+                            <a href="" class="about-index__link text-link">
+                                <span>Подробнее о компании</span>
+                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66602 13.5667L11.1993 7.5L4.66602 1.43333" stroke="#015AAA" stroke-linecap="round"/>
+                            </svg>
+                            </a>
+                        </div>
+
+                        <div class="about-index__wrap">
+                            <div class="about-index__desc">
+                                <p>Мы — ООО «Евроснаб», являемся официальным дилером завода Ayvaz (Турция, Стамбул) на территории России с 2003 года. </p>
+                                <p>Предприятие Айваз в 1960 году начало производить запорную арматуру из бронзы для судостроительства, а в 1970 году запустило производство собственной санитарно-технической и запорной арматуры.</p>
+                                <p>Качество производимой продукции Ayvaz подтверждается наличием сертификатов качества СЕ и ISO 9001:2000, полученных от TÜV, а также от ГОСТ-Р, LLOYDS, Bureau Veritas, VDS.</p>
+                            </div>
+                            <div class="about-index__docs gallery-group">
+                                <a href="img/doc.webp" class="about-index__doc">
+                                    <img src="img/doc.webp" alt="" class="about-index__doc-img">
+                                    <div class="about-index__doc-title">ГОСТ-Р</div>
+                                </a>
+                                <a href="img/doc2.webp" class="about-index__doc">
+                                    <img src="img/doc2.webp" alt="" class="about-index__doc-img">
+                                    <div class="about-index__doc-title">Bureau Veritas</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="advantages-about">
+                            <div class="advantages-about__item">
+                                <div class="advantages-about__title">с 2003 года</div>
+                                <div class="advantages-about__desc">Евроснаб представляет <br> продукцию Ayvaz в России</div>
+                            </div>
+                            <div class="advantages-about__item">
+                                <div class="advantages-about__title">75 000 м²</div>
+                                <div class="advantages-about__desc">общая площадь <br> завода в Турции</div>
+                            </div>
+                            <div class="advantages-about__item">
+                                <div class="advantages-about__title">более 600</div>
+                                <div class="advantages-about__desc">сотрудников работает <br> в компании Ayvaz</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="production">
+                        <div class="production__group">
+                            <div class="production__title display2">Сроки производства</div>
+                            <div class="production__items">
+                                <div class="production__item">
+                                    <div class="production__subtitle">1–5 дней</div>
+                                    <div class="production__desc">Стандартная продукция, которая есть на складе (в 80% случаях).</div>
+                                </div>
+                                <div class="production__item">
+                                    <div class="production__subtitle">20–60 дней</div>
+                                    <div class="production__desc">Под заказ с разработкой чертежа и реализации особых требований.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="production__group">
+                            <div class="production__title display2">Гарантия</div>
+                            <div class="production__items">
+                                <div class="production__item">
+                                    <div class="production__subtitle">5 лет</div>
+                                    <div class="production__desc">Компенсаторы для систем отопления.</div>
+                                </div>
+                                <div class="production__item">
+                                    <div class="production__subtitle">от 2 лет до 30 лет</div>
+                                    <div class="production__desc">Заказные компенсаторы.</div>
+                                    <div class="production__desc2">Возможна гарантия от назначенной наработки компенсатора (циклов).</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class='stage'>
+                <div class='container'>
+    <div class="stage__inner">
+        <div class="stage__title display2">Этапы работы</div>
+        <div class="stage__items">
+            <div class="stage__item">
+                <div class="stage__item-num">1</div>
+                <div class="stage__item-time">20–60 минут</div>
+                <div class="stage__item-title">Отправка заявки</div>
+                <div class="stage__item-desc">Свяжитесь с нами по номеру <a href="tel:+73433126740">+7 343 312-67-40</a> или отправьте свои контакты и мы перезвоним в рабочее время.</div>
+                <button class="stage__btn mbtn btn-blue">Отправить заявку</button>
+            </div>
+            <div class="stage__item">
+                <div class="stage__item-num">2</div>
+                <div class="stage__item-time">1–7 дней</div>
+                <div class="stage__item-title">Подбор компенсаторов</div>
+                <div class="stage__item-desc">Уточняем требования. Подбираем компенсатор из готовых или отправляем инженерам для разработки чертежа.</div>
+            </div>
+            <div class="stage__item">
+                <div class="stage__item-num">3</div>
+                <div class="stage__item-time">1 день</div>
+                <div class="stage__item-title">Оплата товаров</div>
+                <div class="stage__item-desc">Отправляем вам счёт с учётом доставки. Получаем от вас <span tooltip="Товар в наличии  —  100% предоплата. 
+                    Под заказ  —  30-50% предоплата. Оставшиеся проценты до/после отгрузки или по факту поставки. ">предоплату</span> и запускаем задачу в работу.</div>
+            </div>
+            <div class="stage__item">
+                <div class="stage__item-num">4</div>
+                <div class="stage__item-time">1–60 дней</div>
+                <div class="stage__item-title">Изготовление и доставка</div>
+                <div class="stage__item-desc">Если товар в наличии, то отправляем на следующий день после оплаты. Если компенсатор под заказ, то среднее время изготовления 1,5 месяца.</div>
+            </div>
+        </div>
+    </div>
+</div>
+            </section>
+
+            <section class='done-projects'>
+                <div class='container'>
+                    <div class="done-projects__top">
+                        <div class="done-projects__title display2">Выполненные проекты</div>
+                        <a href="" class="done-projects__link done-projects__link--dekstop text-link">
+                            <span>Все проекты</span>
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66602 13.5667L11.1993 7.50002L4.66602 1.43335" stroke="#015AAA" stroke-linecap="round"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+
+                    <div class='swiper-container'>
+                        <div class="done-projects__items swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="done-card">
+                                    <div class="done-card__img">
+                                        <img src="img/project.svg" alt="">
+                                    </div>
+                                    <div class="done-card__desc">Описание деятельности компании-клиента в две строки</div>
+                                    <div class="done-card__items">
+                                        <div class="done-card__item">
+                                            <div class="done-card__title">Задача</div>
+                                            <div class="done-card__desc2">Нашей позиции очевидна: выбранный нами инновационный путь не оставляет шанса для глубокомысленных рассуждений</div>
+                                        </div>
+                                        <div class="done-card__item">
+                                            <div class="done-card__title">Решение</div>
+                                            <div class="done-card__desc2">Нашей позиции очевидна: выбранный нами инновационный путь не оставляет шанса для глубокомысленных рассуждений</div>
+                                        </div>
+                                    </div>
+                                    <div class="done-card__nav">
+                                        <button class="done-card__btn mbtn btn-blue">Подробнее про проект</button>
+                                        <a href="img/catalog.webp" class="done-card__link text-link image-popup">Посмотреть отзыв</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="done-card">
+                                    <div class="done-card__img">
+                                        <img src="img/project.svg" alt="">
+                                    </div>
+                                    <div class="done-card__desc">Описание деятельности компании-клиента в две строки</div>
+                                    <div class="done-card__items">
+                                        <div class="done-card__item">
+                                            <div class="done-card__title">Задача</div>
+                                            <div class="done-card__desc2">Нашей позиции очевидна: выбранный нами инновационный путь не оставляет шанса для глубокомысленных рассуждений</div>
+                                        </div>
+                                        <div class="done-card__item">
+                                            <div class="done-card__title">Решение</div>
+                                            <div class="done-card__desc2">Нашей позиции очевидна: выбранный нами инновационный путь не оставляет шанса для глубокомысленных рассуждений</div>
+                                        </div>
+                                    </div>
+                                    <div class="done-card__nav">
+                                        <button class="done-card__btn mbtn btn-blue">Подробнее про проект</button>
+                                        <a href="img/catalog.webp" class="done-card__link text-link image-popup">Посмотреть отзыв</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="done-card">
+                                    <div class="done-card__img">
+                                        <img src="img/project.svg" alt="">
+                                    </div>
+                                    <div class="done-card__desc">Описание деятельности компании-клиента в две строки</div>
+                                    <div class="done-card__items">
+                                        <div class="done-card__item">
+                                            <div class="done-card__title">Задача</div>
+                                            <div class="done-card__desc2">Нашей позиции очевидна: выбранный нами инновационный путь не оставляет шанса для глубокомысленных рассуждений</div>
+                                        </div>
+                                        <div class="done-card__item">
+                                            <div class="done-card__title">Решение</div>
+                                            <div class="done-card__desc2">Нашей позиции очевидна: выбранный нами инновационный путь не оставляет шанса для глубокомысленных рассуждений</div>
+                                        </div>
+                                    </div>
+                                    <div class="done-card__nav">
+                                        <button class="done-card__btn mbtn btn-blue">Подробнее про проект</button>
+                                        <a href="img/catalog.webp" class="done-card__link text-link image-popup">Посмотреть отзыв</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="done-projects__link done-projects__link--mob text-link">
+                                    <span>Все проекты</span>
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.66602 13.5667L11.1993 7.50002L4.66602 1.43335" stroke="#015AAA" stroke-linecap="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class='swiper-scrollbar'></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='distribute'>
+                <div class='container'>
+                    <div class='distribute__inner'>
+                        <div class="distribute__info">
+                            <div class="distribute__title display2">Ищем дистрибьюторов</div>
+                            <div class="distribute__desc">Компания «Евроснаб» организует торговую сеть. Если у вас есть свой бизнес и вы хотите заняться продажей продукции Айваз на выгодных условиях, отправляйте заявку. Расскажем о сотрудничестве с нами и обсудим детали партнёрских
+                                отношений.
+                            </div>
+                            <div class="distribute__nav">
+                                <button class="distribute__btn mbtn btn-blue">Отправить заявку</button>
+                                <a href="" class="distribute__link text-link mbtn">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.83255 8.36665V7.86665H2.33255V8.36665H2.83255ZM7.36589 8.36665V7.86665H6.86589V8.36665H7.36589ZM7.36589 12.9H6.86589V13.4H7.36589V12.9ZM15.2992 4.96665H15.7992V4.75954L15.6528 4.6131L15.2992 4.96665ZM11.8992 1.56665L12.2528 1.2131L12.1063 1.06665H11.8992V1.56665ZM2.83255 8.86665H3.96589V7.86665H2.83255V8.86665ZM3.33255 13.4667V10.6333H2.33255V13.4667H3.33255ZM3.33255 10.6333V8.36665H2.33255V10.6333H3.33255ZM3.96589 10.1333H2.83255V11.1333H3.96589V10.1333ZM4.59922 9.49998C4.59922 9.84976 4.31567 10.1333 3.96589 10.1333V11.1333C4.86795 11.1333 5.59922 10.402 5.59922 9.49998H4.59922ZM3.96589 8.86665C4.31567 8.86665 4.59922 9.1502 4.59922 9.49998H5.59922C5.59922 8.59792 4.86795 7.86665 3.96589 7.86665V8.86665ZM6.86589 8.36665V12.9H7.86589V8.36665H6.86589ZM7.36589 13.4H8.49922V12.4H7.36589V13.4ZM10.1326 11.7667V9.49998H9.13255V11.7667H10.1326ZM8.49922 7.86665H7.36589V8.86665H8.49922V7.86665ZM10.1326 9.49998C10.1326 8.59792 9.40128 7.86665 8.49922 7.86665V8.86665C8.849 8.86665 9.13255 9.1502 9.13255 9.49998H10.1326ZM8.49922 13.4C9.40128 13.4 10.1326 12.6687 10.1326 11.7667H9.13255C9.13255 12.1164 8.849 12.4 8.49922 12.4V13.4ZM11.3992 7.79998V13.4667H12.3992V7.79998H11.3992ZM11.8992 8.86665H14.7326V7.86665H11.8992V8.86665ZM11.8992 11.1333H13.5992V10.1333H11.8992V11.1333ZM2.19922 6.66665V2.69998H1.19922V6.66665H2.19922ZM14.7992 4.96665V6.66665H15.7992V4.96665H14.7992ZM2.83255 2.06665H11.8992V1.06665H2.83255V2.06665ZM11.5457 1.9202L14.9457 5.3202L15.6528 4.6131L12.2528 1.2131L11.5457 1.9202ZM2.19922 2.69998C2.19922 2.3502 2.48277 2.06665 2.83255 2.06665V1.06665C1.93049 1.06665 1.19922 1.79792 1.19922 2.69998H2.19922ZM1.19922 14.6V16.3H2.19922V14.6H1.19922ZM2.83255 17.9333H14.1659V16.9333H2.83255V17.9333ZM15.7992 16.3V14.6H14.7992V16.3H15.7992ZM14.1659 17.9333C15.068 17.9333 15.7992 17.202 15.7992 16.3H14.7992C14.7992 16.6498 14.5157 16.9333 14.1659 16.9333V17.9333ZM1.19922 16.3C1.19922 17.202 1.93049 17.9333 2.83255 17.9333V16.9333C2.48277 16.9333 2.19922 16.6498 2.19922 16.3H1.19922Z" fill="#015AAA"/>
+                                    </svg>
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="distribute__img">
+                            <img src="img/map.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class='footer'>
+    <div class='container'>
+        <div class='footer__top'>
+            <div class="footer__col">
+                <a href="" class="footer__title">Каталог</a>
+                <div class="footer__links">
+                    <a href="" class="footer__link">Сильфонные компенсаторы для систем отопления</a>
+                    <a href="" class="footer__link">Компенсаторы сдвиговые</a>
+                    <a href="" class="footer__link">Компенсаторы сильфонные осевые</a>
+                    <a href="" class="footer__link">Компенсаторы СКУ ППУ (ПЭ\ОЦ)</a>
+                    <a href="" class="footer__link">Антивибрационные (резиновые) компенсаторы</a>
+                    <a href="" class="footer__link">Компенсаторы универсальные</a>
+                    <a href="" class="footer__link">Компенсаторы разгруженные</a>
+                    <a href="" class="footer__link">Компенсаторы угловые</a>
+                    <a href="" class="footer__link">Судовые компенсаторы</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <a href="" class="footer__title">Компания</a>
+                <div class="footer__links">
+                    <a href="" class="footer__link">Доставка и оплата</a>
+                    <a href="" class="footer__link">Выполненные проекты</a>
+                    <a href="" class="footer__link">О компании</a>
+                    <a href="" class="footer__link">Партнеры</a>
+                    <a href="" class="footer__link">Контакты</a>
+                    <a href="" class="footer__link">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__links2">
+                    <a href="" class="footer__title">Товары в наличии</a>
+                    <a href="" class="footer__title">Подбор компенсаторов</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <a href="" class="footer__title">Документы</a>
+                <div class="footer__links">
+                    <a href="" class="footer__link">
+                        <span>Опросный лист</span>
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.83255 7.86665V7.36665H2.33255V7.86665H2.83255ZM7.36589 7.86665V7.36665H6.86589V7.86665H7.36589ZM7.36589 12.4H6.86589V12.9H7.36589V12.4ZM15.2992 4.46665H15.7992V4.25954L15.6528 4.1131L15.2992 4.46665ZM11.8992 1.06665L12.2528 0.713097L12.1063 0.56665H11.8992V1.06665ZM2.83255 8.36665H3.96589V7.36665H2.83255V8.36665ZM3.33255 12.9667V10.1333H2.33255V12.9667H3.33255ZM3.33255 10.1333V7.86665H2.33255V10.1333H3.33255ZM3.96589 9.63332H2.83255V10.6333H3.96589V9.63332ZM4.59922 8.99998C4.59922 9.34976 4.31567 9.63332 3.96589 9.63332V10.6333C4.86795 10.6333 5.59922 9.90205 5.59922 8.99998H4.59922ZM3.96589 8.36665C4.31567 8.36665 4.59922 8.6502 4.59922 8.99998H5.59922C5.59922 8.09792 4.86795 7.36665 3.96589 7.36665V8.36665ZM6.86589 7.86665V12.4H7.86589V7.86665H6.86589ZM7.36589 12.9H8.49922V11.9H7.36589V12.9ZM10.1326 11.2667V8.99998H9.13255V11.2667H10.1326ZM8.49922 7.36665H7.36589V8.36665H8.49922V7.36665ZM10.1326 8.99998C10.1326 8.09792 9.40128 7.36665 8.49922 7.36665V8.36665C8.849 8.36665 9.13255 8.6502 9.13255 8.99998H10.1326ZM8.49922 12.9C9.40128 12.9 10.1326 12.1687 10.1326 11.2667H9.13255C9.13255 11.6164 8.849 11.9 8.49922 11.9V12.9ZM11.3992 7.29998V12.9667H12.3992V7.29998H11.3992ZM11.8992 8.36665H14.7326V7.36665H11.8992V8.36665ZM11.8992 10.6333H13.5992V9.63332H11.8992V10.6333ZM2.19922 6.16665V2.19998H1.19922V6.16665H2.19922ZM14.7992 4.46665V6.16665H15.7992V4.46665H14.7992ZM2.83255 1.56665H11.8992V0.56665H2.83255V1.56665ZM11.5457 1.4202L14.9457 4.8202L15.6528 4.1131L12.2528 0.713097L11.5457 1.4202ZM2.19922 2.19998C2.19922 1.8502 2.48277 1.56665 2.83255 1.56665V0.56665C1.93049 0.56665 1.19922 1.29792 1.19922 2.19998H2.19922ZM1.19922 14.1V15.8H2.19922V14.1H1.19922ZM2.83255 17.4333H14.1659V16.4333H2.83255V17.4333ZM15.7992 15.8V14.1H14.7992V15.8H15.7992ZM14.1659 17.4333C15.068 17.4333 15.7992 16.702 15.7992 15.8H14.7992C14.7992 16.1498 14.5157 16.4333 14.1659 16.4333V17.4333ZM1.19922 15.8C1.19922 16.702 1.93049 17.4333 2.83255 17.4333V16.4333C2.48277 16.4333 2.19922 16.1498 2.19922 15.8H1.19922Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__link">
+                        <span>Каталог продукции</span>
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.83255 7.86665V7.36665H2.33255V7.86665H2.83255ZM7.36589 7.86665V7.36665H6.86589V7.86665H7.36589ZM7.36589 12.4H6.86589V12.9H7.36589V12.4ZM15.2992 4.46665H15.7992V4.25954L15.6528 4.1131L15.2992 4.46665ZM11.8992 1.06665L12.2528 0.713097L12.1063 0.56665H11.8992V1.06665ZM2.83255 8.36665H3.96589V7.36665H2.83255V8.36665ZM3.33255 12.9667V10.1333H2.33255V12.9667H3.33255ZM3.33255 10.1333V7.86665H2.33255V10.1333H3.33255ZM3.96589 9.63332H2.83255V10.6333H3.96589V9.63332ZM4.59922 8.99998C4.59922 9.34976 4.31567 9.63332 3.96589 9.63332V10.6333C4.86795 10.6333 5.59922 9.90205 5.59922 8.99998H4.59922ZM3.96589 8.36665C4.31567 8.36665 4.59922 8.6502 4.59922 8.99998H5.59922C5.59922 8.09792 4.86795 7.36665 3.96589 7.36665V8.36665ZM6.86589 7.86665V12.4H7.86589V7.86665H6.86589ZM7.36589 12.9H8.49922V11.9H7.36589V12.9ZM10.1326 11.2667V8.99998H9.13255V11.2667H10.1326ZM8.49922 7.36665H7.36589V8.36665H8.49922V7.36665ZM10.1326 8.99998C10.1326 8.09792 9.40128 7.36665 8.49922 7.36665V8.36665C8.849 8.36665 9.13255 8.6502 9.13255 8.99998H10.1326ZM8.49922 12.9C9.40128 12.9 10.1326 12.1687 10.1326 11.2667H9.13255C9.13255 11.6164 8.849 11.9 8.49922 11.9V12.9ZM11.3992 7.29998V12.9667H12.3992V7.29998H11.3992ZM11.8992 8.36665H14.7326V7.36665H11.8992V8.36665ZM11.8992 10.6333H13.5992V9.63332H11.8992V10.6333ZM2.19922 6.16665V2.19998H1.19922V6.16665H2.19922ZM14.7992 4.46665V6.16665H15.7992V4.46665H14.7992ZM2.83255 1.56665H11.8992V0.56665H2.83255V1.56665ZM11.5457 1.4202L14.9457 4.8202L15.6528 4.1131L12.2528 0.713097L11.5457 1.4202ZM2.19922 2.19998C2.19922 1.8502 2.48277 1.56665 2.83255 1.56665V0.56665C1.93049 0.56665 1.19922 1.29792 1.19922 2.19998H2.19922ZM1.19922 14.1V15.8H2.19922V14.1H1.19922ZM2.83255 17.4333H14.1659V16.4333H2.83255V17.4333ZM15.7992 15.8V14.1H14.7992V15.8H15.7992ZM14.1659 17.4333C15.068 17.4333 15.7992 16.702 15.7992 15.8H14.7992C14.7992 16.1498 14.5157 16.4333 14.1659 16.4333V17.4333ZM1.19922 15.8C1.19922 16.702 1.93049 17.4333 2.83255 17.4333V16.4333C2.48277 16.4333 2.19922 16.1498 2.19922 15.8H1.19922Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="" class="footer__link">
+                        <span>Сертификаты</span>
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.83255 7.86665V7.36665H2.33255V7.86665H2.83255ZM7.36589 7.86665V7.36665H6.86589V7.86665H7.36589ZM7.36589 12.4H6.86589V12.9H7.36589V12.4ZM15.2992 4.46665H15.7992V4.25954L15.6528 4.1131L15.2992 4.46665ZM11.8992 1.06665L12.2528 0.713097L12.1063 0.56665H11.8992V1.06665ZM2.83255 8.36665H3.96589V7.36665H2.83255V8.36665ZM3.33255 12.9667V10.1333H2.33255V12.9667H3.33255ZM3.33255 10.1333V7.86665H2.33255V10.1333H3.33255ZM3.96589 9.63332H2.83255V10.6333H3.96589V9.63332ZM4.59922 8.99998C4.59922 9.34976 4.31567 9.63332 3.96589 9.63332V10.6333C4.86795 10.6333 5.59922 9.90205 5.59922 8.99998H4.59922ZM3.96589 8.36665C4.31567 8.36665 4.59922 8.6502 4.59922 8.99998H5.59922C5.59922 8.09792 4.86795 7.36665 3.96589 7.36665V8.36665ZM6.86589 7.86665V12.4H7.86589V7.86665H6.86589ZM7.36589 12.9H8.49922V11.9H7.36589V12.9ZM10.1326 11.2667V8.99998H9.13255V11.2667H10.1326ZM8.49922 7.36665H7.36589V8.36665H8.49922V7.36665ZM10.1326 8.99998C10.1326 8.09792 9.40128 7.36665 8.49922 7.36665V8.36665C8.849 8.36665 9.13255 8.6502 9.13255 8.99998H10.1326ZM8.49922 12.9C9.40128 12.9 10.1326 12.1687 10.1326 11.2667H9.13255C9.13255 11.6164 8.849 11.9 8.49922 11.9V12.9ZM11.3992 7.29998V12.9667H12.3992V7.29998H11.3992ZM11.8992 8.36665H14.7326V7.36665H11.8992V8.36665ZM11.8992 10.6333H13.5992V9.63332H11.8992V10.6333ZM2.19922 6.16665V2.19998H1.19922V6.16665H2.19922ZM14.7992 4.46665V6.16665H15.7992V4.46665H14.7992ZM2.83255 1.56665H11.8992V0.56665H2.83255V1.56665ZM11.5457 1.4202L14.9457 4.8202L15.6528 4.1131L12.2528 0.713097L11.5457 1.4202ZM2.19922 2.19998C2.19922 1.8502 2.48277 1.56665 2.83255 1.56665V0.56665C1.93049 0.56665 1.19922 1.29792 1.19922 2.19998H2.19922ZM1.19922 14.1V15.8H2.19922V14.1H1.19922ZM2.83255 17.4333H14.1659V16.4333H2.83255V17.4333ZM15.7992 15.8V14.1H14.7992V15.8H15.7992ZM14.1659 17.4333C15.068 17.4333 15.7992 16.702 15.7992 15.8H14.7992C14.7992 16.1498 14.5157 16.4333 14.1659 16.4333V17.4333ZM1.19922 15.8C1.19922 16.702 1.93049 17.4333 2.83255 17.4333V16.4333C2.48277 16.4333 2.19922 16.1498 2.19922 15.8H1.19922Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__contacts">
+                    <a href="" class="footer__contacts-link footer__title">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5C15.5228 0.5 20 4.97715 20 10.5C20 16.0228 15.5228 20.5 10 20.5C4.47715 20.5 0 16.0228 0 10.5C0 4.97715 4.47715 0.5 10 0.5ZM12.6642 9.23267C12.6156 8.83754 12.4941 8.52728 12.2784 8.25247C11.9984 7.8986 11.6405 7.6867 11.1106 7.561C10.7653 7.47722 10.6258 7.48684 10.5009 7.60092C10.3846 7.7078 10.3619 7.92207 10.4508 8.06082C10.5133 8.16153 10.5854 8.19761 10.786 8.23698C11.0531 8.28613 11.2377 8.34992 11.4057 8.44593C11.7621 8.65174 11.9281 8.9738 11.9459 9.49519C11.9542 9.74 11.9753 9.81527 12.0608 9.90209C12.2193 10.0608 12.5013 10.0299 12.621 9.84001C12.6649 9.76842 12.6716 9.73726 12.6762 9.57103C12.6793 9.46811 12.6749 9.31493 12.6642 9.23267ZM12.669 6.8084C13.5164 7.49366 13.9899 8.46762 14.0603 9.67819C14.0899 10.155 14.0505 10.3103 13.8823 10.3987C13.7305 10.4807 13.5585 10.4537 13.4406 10.3303C13.3624 10.2501 13.3324 10.1403 13.3335 9.94594C13.337 9.40854 13.2132 8.80841 13.0118 8.39197C12.7789 7.9073 12.4187 7.49484 11.9657 7.19329C11.5688 6.92844 11.0436 6.74953 10.5344 6.70498C10.2041 6.67609 10.0861 6.62014 10.0227 6.4618C9.98347 6.36708 9.99385 6.20333 10.0399 6.12998C10.0834 6.06235 10.1811 5.98756 10.2502 5.96779C10.3234 5.94644 10.75 5.98377 10.9818 6.02982C11.6144 6.15858 12.1915 6.42335 12.669 6.8084ZM15.6051 14.3401C15.5814 14.2709 15.5262 14.1642 15.4867 14.1029C15.238 13.7274 13.9019 12.6818 13.2348 12.3398C12.8539 12.1441 12.5717 12.0789 12.3625 12.1402C12.1375 12.2034 12.019 12.3082 11.6421 12.7766C11.4901 12.9644 11.3342 13.1403 11.2928 13.168C11.1901 13.2392 10.9888 13.2965 10.8467 13.2965C10.5171 13.2945 9.91911 13.081 9.45926 12.8003C9.10203 12.5829 8.64418 12.1936 8.29285 11.8081C7.87838 11.3555 7.59618 10.9562 7.37314 10.5055C7.08501 9.92638 7.01198 9.57256 7.13236 9.31361C7.16197 9.24839 7.20145 9.17923 7.21919 9.15745C7.23696 9.13772 7.42249 8.9855 7.62772 8.81946C8.03036 8.49927 8.09548 8.42613 8.17048 8.20672C8.26521 7.92801 8.23957 7.64338 8.09352 7.35678C7.98101 7.13935 7.68695 6.66497 7.4738 6.3586C7.19157 5.95538 6.48896 5.09358 6.34882 4.97693C6.0962 4.77138 5.77255 4.73578 5.41529 4.87417C5.03837 5.02045 4.33179 5.5897 4.02982 5.98701C3.75746 6.34674 3.65289 6.60171 3.63708 6.93774C3.62328 7.21445 3.64695 7.3291 3.793 7.68292C4.93573 10.4581 6.64091 12.6739 8.98362 14.4331C10.2073 15.3522 11.4763 16.0519 12.7927 16.5302C13.5604 16.8089 13.894 16.8228 14.2867 16.5935C14.4525 16.4946 14.863 16.0736 15.0919 15.7673C15.4709 15.2573 15.611 15.0221 15.6505 14.8343C15.6781 14.7058 15.6564 14.4825 15.6051 14.3401ZM15.1005 8.08356C15.3409 8.70978 15.4562 9.27145 15.4814 9.95622C15.4855 10.0915 15.4836 10.3393 15.4748 10.5072C15.4566 10.8291 15.4391 10.893 15.3465 10.9782C15.1975 11.1179 14.9073 11.0846 14.7972 10.9162C14.7397 10.8259 14.7316 10.7597 14.7427 10.3836C14.7747 9.27137 14.5497 8.40048 14.0078 7.52965C13.3602 6.48487 12.3916 5.78106 11.132 5.43674C10.8108 5.34909 10.5401 5.29568 10.1191 5.239C9.84484 5.2031 9.78478 5.18793 9.7171 5.14627C9.51263 5.01531 9.50991 4.6837 9.71374 4.55074C9.81892 4.48056 9.89648 4.47742 10.2393 4.52133C11.2447 4.64696 12.1417 4.94569 12.8789 5.39711C13.4072 5.7211 13.7404 6.01216 14.1693 6.52192C14.6229 7.0656 14.8631 7.46756 15.1005 8.08356Z" fill="white"/>
+                        </svg>
+                        <span>+7 343 312-67-40</span>
+                    </a>
+                    <a href="" class="footer__contacts-link footer__title">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.5C4.47715 0.5 0 4.97715 0 10.5C0 16.0228 4.47715 20.5 10 20.5C15.5228 20.5 20 16.0228 20 10.5C20 4.97715 15.5228 0.5 10 0.5ZM4.16667 10.4834C4.16667 7.27606 6.78343 4.66667 9.99992 4.66667C13.2164 4.66667 15.8332 7.27606 15.8332 10.4834C15.8332 10.9378 15.7953 11.3057 15.7103 11.6749L15.7091 11.681C15.7089 11.6821 15.6667 11.8523 15.6434 11.9265C15.4993 12.3863 15.2382 12.7693 14.8885 13.034C14.5494 13.2907 14.1289 13.4321 13.7046 13.4321C13.6522 13.4321 13.5994 13.43 13.5477 13.4259C12.9451 13.3776 12.4152 13.0614 12.0903 12.5572C11.5315 13.1175 10.7902 13.4257 9.99992 13.4257C8.37297 13.4257 7.04934 12.1058 7.04934 10.4834C7.04934 8.86109 8.37297 7.54122 9.99992 7.54122C11.6269 7.54122 12.9505 8.86109 12.9505 10.4834V11.4319C12.9529 11.9853 13.3254 12.2115 13.6435 12.2371C13.9601 12.2615 14.3813 12.0776 14.5281 11.4775C14.6005 11.1484 14.6372 10.8139 14.6372 10.4834C14.6372 7.93362 12.5569 5.85922 9.99992 5.85922C7.44289 5.85922 5.36262 7.93362 5.36262 10.4834C5.36262 13.0333 7.44289 15.1077 9.99992 15.1077C10.89 15.1077 11.7557 14.8542 12.5033 14.3746L12.5167 14.366L13.3025 15.2771L13.2857 15.2886C12.3145 15.9504 11.1783 16.3003 9.99992 16.3003C6.78343 16.3003 4.16667 13.6909 4.16667 10.4834Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7545 10.4834C11.7545 11.4482 10.9674 12.2332 9.99992 12.2332C9.03239 12.2332 8.2453 11.4482 8.2453 10.4834C8.2453 9.51869 9.03239 8.73381 9.99992 8.73381C10.9674 8.73381 11.7545 9.51869 11.7545 10.4834Z" fill="white"/>
+                        </svg>
+                        <span>info@ayvaz-russia.ru</span>
+                    </a>
+                    <a href="" class="footer__contacts-link footer__title">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 10.5C20 16.0228 15.5228 20.5 10 20.5C4.47717 20.5 0 16.0228 0 10.5C0 4.97717 4.47717 0.5 10 0.5C15.5228 0.5 20 4.97717 20 10.5ZM6.69646 9.58396C5.69471 10.0213 4.66546 10.4707 3.72427 10.9892C3.23282 11.349 3.88599 11.6035 4.49879 11.8423C4.59621 11.8802 4.69258 11.9178 4.78321 11.9553C4.85862 11.9785 4.93529 12.0029 5.013 12.0277C5.69454 12.2448 6.45446 12.4869 7.11613 12.1227C8.20304 11.4983 9.22875 10.7765 10.2537 10.0552C10.5895 9.81887 10.9252 9.58263 11.263 9.34987C11.2788 9.33975 11.2966 9.32817 11.3162 9.31554C11.6039 9.129 12.251 8.70954 12.0116 9.28754C11.4456 9.90654 10.8393 10.4545 10.2298 11.0054C9.81896 11.3767 9.40663 11.7494 9.00413 12.146C8.65358 12.4309 8.28954 13.0037 8.68208 13.4025C9.58621 14.0355 10.5045 14.653 11.4222 15.2703C11.7208 15.4711 12.0194 15.672 12.3174 15.8733C12.8225 16.2765 13.6119 15.9503 13.7229 15.3202C13.7723 15.0303 13.8219 14.7405 13.8715 14.4506C14.1455 12.8487 14.4195 11.2461 14.6617 9.63896C14.6946 9.38683 14.7319 9.13475 14.7692 8.88254C14.8597 8.27125 14.9503 7.65921 14.9785 7.04462C14.9056 6.43129 14.162 6.56617 13.7481 6.70408C11.621 7.5135 9.51504 8.38292 7.41746 9.26767C7.17983 9.37292 6.93896 9.47808 6.69646 9.58396Z" fill="white"/>
+                        </svg>
+                        <span>Написать в Telegram</span>
+                    </a>
+                    <a href="" class="footer__contacts-link footer__title">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20.5C4.47715 20.5 0 16.0228 0 10.5C0 4.97715 4.47715 0.5 10 0.5C15.5228 0.5 20 4.97715 20 10.5C20 16.0228 15.5228 20.5 10 20.5ZM10.3296 16.0635C13.6081 16.0622 16.2746 13.3951 16.2759 10.1173C16.2765 8.52847 15.6586 7.03451 14.5359 5.91059C13.4133 4.78661 11.9203 4.16735 10.3296 4.16667C7.05201 4.16667 4.38449 6.83404 4.38319 10.1126C4.38274 11.1606 4.65656 12.1835 5.17692 13.0854L4.33333 16.1667L7.48556 15.3398C8.35408 15.8135 9.33196 16.0632 10.3272 16.0635H10.3296Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.63117 14.2632L5.7606 14.7539L6.25988 12.9301L6.14237 12.7431C5.64763 11.9562 5.38634 11.0467 5.38672 10.1128C5.3878 7.38784 7.60495 5.1709 10.3311 5.1709C11.6512 5.17136 12.8921 5.68609 13.8253 6.62029C14.7584 7.5545 15.272 8.79622 15.2714 10.1168C15.2704 12.842 13.0532 15.0592 10.3292 15.0592H10.3272C9.44031 15.0588 8.57047 14.8206 7.81165 14.3703L7.63117 14.2632ZM13.3249 11.5312C13.2878 11.4692 13.1887 11.432 13.0401 11.3576C12.8916 11.2833 12.1611 10.9239 12.0249 10.8742C11.8887 10.8247 11.7896 10.7999 11.6906 10.9486C11.5915 11.0973 11.3068 11.432 11.2201 11.5312C11.1335 11.6303 11.0468 11.6428 10.8983 11.5684C10.7497 11.494 10.2709 11.3371 9.70341 10.8309C9.26172 10.4369 8.96353 9.95041 8.87686 9.80166C8.79019 9.65291 8.86762 9.57252 8.942 9.49843C9.00885 9.43184 9.09059 9.32485 9.16488 9.23812C9.23916 9.15139 9.26392 9.08937 9.31345 8.99028C9.36297 8.89108 9.33821 8.80434 9.30106 8.72997C9.26392 8.65559 8.96678 7.92426 8.84297 7.62676C8.72236 7.33704 8.59987 7.37629 8.50868 7.37171C8.42211 7.36736 8.32295 7.36645 8.22391 7.36645C8.12487 7.36645 7.96389 7.40364 7.8277 7.55238C7.69152 7.70113 7.30769 8.06059 7.30769 8.79187C7.30769 9.52321 7.84008 10.2297 7.91437 10.3289C7.98866 10.4281 8.96205 11.9288 10.4525 12.5723C10.807 12.7254 11.0837 12.8168 11.2995 12.8853C11.6555 12.9984 11.9794 12.9825 12.2353 12.9442C12.5208 12.9015 13.1144 12.5848 13.2383 12.2377C13.362 11.8906 13.362 11.5931 13.3249 11.5312Z" fill="white"/>
+                        </svg>
+                        <span>Написать в WhatsApp</span>
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__info-item">ПН-ПТ c 9:00 до 18:00 <br> СБ-ВС выходной</div>
+                    <div class="footer__info-item">
+                        г. Екатеринбург <br> ул. Совхозная 18/1, оф.3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="" class="footer__logo">
+                <img src="img/LOGO.png" alt="">
+            </a>
+            <div class="footer__offerta">Сайт не является офертой. Актуальные цены и наличие товаров уточняйте по телефону или в мессенджерах.</div>
+            <a href="https://loginova.me/" target="_blank" class="footer__by">Дизайн: loginova.me</a>
+        </div>
+    </div>
+</footer>
+
+<button class="scroll-up">
+    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.99609 8.49951L8.99609 1.49951L15.9961 8.49951" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+</button>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

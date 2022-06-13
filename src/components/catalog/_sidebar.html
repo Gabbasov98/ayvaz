@@ -1,0 +1,288 @@
+<div class="filter">
+    <div class="filter__top">
+        <span>Фильтры</span>
+        <button class="filter__close">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3337 3.66675L3.66699 18.3334" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.66699 3.66675L18.3337 18.3334" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    <div class="filter__bottom">
+        <div class="filter__group filter__group--mob selected-filters">
+            <div class="filter__group-top">
+                <div class="filter__title">Ваш выбор</div>
+                <button class="selected-filters__refresh">Сбросить все</button>
+            </div>
+            <div class="selected-filters__wrap">
+                @@include('_selected-filters.html')
+            </div>
+        </div>
+
+        <div class="filter__group">
+            <div class="filter__title">Наличие</div>
+            <div class="filter__checks">
+                <div class="filter__check radio">
+                    <input checked type='radio' name='has' />
+                    <label>
+                    В наличии
+                    <span>(1578)</span>
+                </label>
+                </div>
+                <div class="filter__check radio">
+                    <input type='radio' name='has' />
+                    <label>
+                    Под заказ
+                    <span>(2458)</span>
+                </label>
+                </div>
+            </div>
+        </div>
+        <div class="filter__group">
+            <div class="filter__title">Тип присоединения</div>
+            <div class="filter__checks">
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    Под приварку
+                    <span>(2)</span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input checked type='checkbox' />
+                    <label>
+                    Фланцевые
+                    <span>(2)</span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    Муфтовый
+                    <span>(1)</span>
+                </label>
+                </div>
+            </div>
+        </div>
+        <div class="filter__group">
+            <div class="filter__title">Диаметр, мм</div>
+            <div class="filter__checks  filter__checks--grid">
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    15
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    20
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    25
+                    <span>(5)</span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    32
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    40
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    50
+                    <span>(3)</span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    65
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    80
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    65
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    80
+                </label>
+                </div>
+            </div>
+            <button class="filter__more">
+            <span>Показать еще 10</span>
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.66699 2.66663L6.00033 7.33329L10.3337 2.66663" stroke="#666666" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        </button>
+        </div>
+        <div class="filter__group">
+            <div class="filter__title">Давление, бар</div>
+            <div class="filter__checks filter__checks--grid">
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    0,5 
+                    <span></span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    1
+                    <span></span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    1,5
+                    <span></span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    2
+                    <span></span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    2,5
+                    <span>(2)</span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    3
+                    <span></span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    4
+                    <span></span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    6
+                    <span></span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    10
+                    <span></span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    16
+                    <span>(3)</span>
+                </label>
+                </div>
+            </div>
+            <button class="filter__more">
+            <span>Показать еще 10</span>
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.66699 2.66663L6.00033 7.33329L10.3337 2.66663" stroke="#666666" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        </button>
+        </div>
+        <div class="filter__group">
+            <div class="filter__title">Тип рабочей среды</div>
+            <div class="filter__checks">
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    Вода
+                    <span>(5)</span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input disabled type='checkbox' />
+                    <label>
+                    Выхлопные газы
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    Сжиженный газы
+                    <span>(3)</span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    Пар
+                    <span>(3)</span>
+                </label>
+                </div>
+                <div class="filter__check check">
+                    <input type='checkbox' />
+                    <label>
+                    Нефтепродукты
+                    <span>(3)</span>
+                </label>
+                </div>
+            </div>
+        </div>
+        <div class="filter__group">
+            <div class="filter__title">Наличие кожуха</div>
+            <div class="filter__checks">
+                <div class="filter__check radio">
+                    <input checked type='radio' name='skin' />
+                    <label>
+                    С защитным кожухом
+                    <span>(2)</span>
+                </label>
+                </div>
+                <div class="filter__check radio">
+                    <input type='radio' name='skin' />
+                    <label>
+                    Без кожуха
+                    <span>(3)</span>
+                </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="filter__bg"></div>
+<div class="catalog-consult2">
+    <div class="catalog-consult2__title display3">
+        Проектируем и производим на заказ
+    </div>
+    <div class="catalog-consult2__desc">От одной штуки до серии. С соблюдением всех требований стандартов качества.</div>
+    <button class="catalog-consult2__btn mbtn btn-white">Заполнить опросный лист</button>
+</div>

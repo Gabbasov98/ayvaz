@@ -1,0 +1,24 @@
+<div class='breadcrumbs'>
+    <a href="" class="breadcrumbs__back">
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.23529 0.800049L1 5.00005M1 5.00005L5.23529 9.20005M1 5.00005H13" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+    <div class="breadcrumbs__items">
+        <a href="" class="breadcrumbs__item">Главная</a>
+        <!--  -->
+        @@if(third === ""){
+        <span class="breadcrumbs__item">@@second</span> }
+        <!--  -->
+        @@if(third !== "" && fourth === ""){
+        <a href="" class="breadcrumbs__item">@@second</a>
+        <span class="breadcrumbs__item">@@third</span> }
+        <!--  -->
+        @@if(fourth !== ""){
+        <a href="" class="breadcrumbs__item">@@second</a>
+        <a href="" class="breadcrumbs__item">@@third</a>
+        <span class="breadcrumbs__item">@@fourth</span> }
+    </div>
+</div>
+
+<!-- @@include('components/page-blocks/_breadcrumbs.html',{"second":"link1","third":"link2","fourth":"link3"}) -->

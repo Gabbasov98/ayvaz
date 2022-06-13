@@ -1,0 +1,78 @@
+@import "../vars.scss";
+@import "../mixins";
+.header-search {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 165px;
+    left: 0;
+    z-index: 55;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .225s;
+    &--active {
+        opacity: 1;
+        pointer-events: unset;
+    }
+    &__inner {
+        height: calc(100vh - 165px);
+        padding: 43px 0 60px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        @include scroll;
+    }
+    &__wrap {
+        width: calc(100% - 310px);
+        margin-left: auto;
+        margin-right: 81px;
+    }
+    &__results {
+        display: none;
+    }
+    &__title {
+        font-weight: 500;
+        line-height: 140%;
+        font-feature-settings: 'case' on;
+        margin-bottom: 16px;
+        color: $gray;
+    }
+    &__link {
+        display: block;
+        font-feature-settings: 'case' on;
+        line-height: 140%;
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+    &__products {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-search {
+        .container {
+            padding-right: 5px;
+        }
+        &__inner {
+            padding-right: 40px;
+        }
+        &__wrap {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header-search {
+        top: 135px;
+        &__inner {
+            padding: 32px 15px 60px 0;
+            height: calc(100vh - 135px);
+        }
+        &__title,
+        &__link {
+            font-size: 14px;
+        }
+    }
+}

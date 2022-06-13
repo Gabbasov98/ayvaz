@@ -1,0 +1,5 @@
+@import '../_mixins';
+@include font-face('PT Root UI', 'PTRootUI-Light', 300);
+@include font-face('PT Root UI', 'PTRootUI-Regular', 400);
+@include font-face('PT Root UI', 'PTRootUI-Medium', 500);
+@include font-face('PT Root UI', 'PTRootUI-Bold', 700);

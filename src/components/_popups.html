@@ -1,13 +1,219 @@
-<div class="modal" id="quickOrder" aria-hidden="true">
+<div class="modal fade" id="consultModal" aria-hidden="true">
     <div class="modal-dialog">
         <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3327 1.66699L1.66602 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.66602 1.66699L12.3327 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </button>
 
+        <div class="modal__title display2">Получить консультацию</div>
+        <div class="modal__desc">После отправки данных, специалист свяжется с вами в течение часа. Ответит на все ваши вопросы и сделает лучшее предложение.</div>
 
 
+        <form class="modal__form">
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя","placeholder":"Введите имя"})
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"tel","label":"Контактный телефон ","placeholder":"+7 (___) ___ __ __"})
+            </fieldset>
+            <div class="modal__check check">
+                <input checked type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+            <button class="modal__btn mbtn btn-blue">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="compModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3327 1.66699L1.66602 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.66602 1.66699L12.3327 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Подбор компенсатора</div>
+        <div class="modal__desc">После отправки данных, специалист свяжется с вами в течение часа. Подберёт компенсатор и ответит на все ваши вопросы.</div>
+
+
+        <form class="modal__form">
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя","placeholder":"Введите имя"})
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"tel","label":"Контактный телефон ","placeholder":"+7 (___) ___ __ __"})
+            </fieldset>
+            <div class="modal__check check">
+                <input checked type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+            <button class="modal__btn mbtn btn-blue">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="individual" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3327 1.66699L1.66602 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.66602 1.66699L12.3327 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Заявка на индивидуальное производство</div>
+        <div class="modal__desc">После отправки данных, специалист свяжется с вами в течение часа. Проконсультирует по условиям, срокам и стоимости реализации.</div>
+
+
+        <form class="modal__form">
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя","placeholder":"Введите имя"})
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"tel","label":"Контактный телефон ","placeholder":"+7 (___) ___ __ __"})
+            </fieldset>
+            <fieldset class='form-group'>
+                @@include('ui/_textarea.html',{"label":"Комментарий","placeholder":"Укажите дополнительную информацию, при необходимости"})
+            </fieldset>
+            <div class="modal__file">
+                <div class="modal__file-title">Прикрепить файлы</div>
+                <div class="file-input">
+                    @@include('ui/_file-input.html')
+                </div>
+            </div>
+
+            <div class="modal__check check">
+                <input checked type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+            <button class="modal__btn mbtn btn-blue">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="partner" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3327 1.66699L1.66602 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.66602 1.66699L12.3327 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Стать партнером Айваз</div>
+        <div class="modal__desc">После отправки контактов, наберем вас в течение рабочего дня, подробно расскажем о сотрудничестве и ответим на все вопросы.</div>
+
+
+        <form class="modal__form">
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя","placeholder":"Введите имя"})
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"tel","label":"Контактный телефон ","placeholder":"+7 (___) ___ __ __"})
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"email","label":"Почта","placeholder":"Введите адрес почты"})
+            </fieldset>
+            <fieldset class='form-group'>
+                @@include('ui/_input.html',{"type":"text","label":"Сайт вашей компании","placeholder":"Введите адрес сайта"})
+            </fieldset>
+            <fieldset class='form-group'>
+                @@include('ui/_textarea.html',{"label":"Комментарий","placeholder":"Расскажите вкратце о компании, ваших клиентах и их потребностях."})
+            </fieldset>
+
+            <div class="modal__check check">
+                <input checked type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+            <button class="modal__btn mbtn btn-blue">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade " id="cartModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3327 1.66699L1.66602 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.66602 1.66699L12.3327 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <div class="modal__title display2">Ваш заказ</div>
+        <div class="modal__desc">После отправки контактов, наберем вас в течение часа. Сориентируем по условиям и дате доставки.</div>
+
+        <div class="modal__cart">
+            <div class="modal__cart-items">
+                <div class="cart-card">
+                    @@include('cards/_cart-card.html',{"img":"product"}')
+                </div>
+                <div class="cart-card">
+                    @@include('cards/_cart-card.html',{"img":"product2"}')
+                </div>
+                <div class="cart-card">
+                    @@include('cards/_cart-card.html',{"img":"product3"}')
+                </div>
+            </div>
+            <div class="modal__cart-sum">
+                <span>Сумма заказа:</span>
+                <span>12 361 руб.</span>
+            </div>
+        </div>
+
+
+        <div class="modal__title display2">Контакты</div>
+
+        <form class="modal__form">
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"text","label":"Имя","placeholder":"Введите имя"})
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"tel","label":"Контактный телефон ","placeholder":"+7 (___) ___ __ __"})
+            </fieldset>
+            <fieldset class='form-group form-group--required'>
+                @@include('ui/_input.html',{"type":"email","label":"Почта","placeholder":"Введите адрес почты"})
+            </fieldset>
+
+            <div class="modal__check check">
+                <input checked type='checkbox' />
+                <label>
+                    Я соглашаюсь на <a href="">обработку</a> моих персональных данных
+                </label>
+            </div>
+            <button class="modal__btn mbtn btn-blue">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade thank-modal" id="thankModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3327 1.66699L1.66602 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.66602 1.66699L12.3327 12.3337" stroke="#000B15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <div class="modal__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 44C35 44 44 35 44 24C44 13 35 4 24 4C13 4 4 13 4 24C4 35 13 44 24 44Z" stroke="#69BE15" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.5 23.9998L21.16 29.6598L32.5 18.3398" stroke="#69BE15" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="modal__title display2">Успешно!</div>
+        <div class="modal__desc">Спасибо, мы получили контакты и свяжемся с вами в ближайшее время.</div>
     </div>
 </div>
 

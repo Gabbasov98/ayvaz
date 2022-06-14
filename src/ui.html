@@ -1,0 +1,58 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <main class="content">
+
+
+            <div class="ui-kit">
+                <div class="ui-kit__group">
+                    <div class="ui-kit__title display1">Поля</div>
+                    <div class="ui-kit__inputs">
+                        <fieldset class='form-group'>
+                            @@include('components/ui/_input.html',{"type":"text","label":"Имя*"})
+                        </fieldset>
+                        <fieldset class='form-group form-group--error'>
+                            @@include('components/ui/_input.html',{"type":"text","label":"Имя*"})
+                        </fieldset>
+                    </div>
+                    <div class="ui-kit__inputs">
+                        <fieldset class='form-group'>
+                            @@include('components/ui/_textarea.html',{"label":"Ваш комментарий","placeholder":"Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"})
+                        </fieldset>
+                        <fieldset class='form-group form-group--error'>
+                            @@include('components/ui/_textarea.html',{"label":"Ваш комментарий","placeholder":"Укажите интересующие позиции ЖБИ, куда привезти и другую информацию, при необходимости"})
+                        </fieldset>
+                    </div>
+
+                </div>
+
+
+                <div class="ui-kit__group">
+                    <div class="ui-kit__title display1">Загрузка файлов</div>
+                    <div class="ui-kit__inputs">
+                        <div class="file-input">
+                            @@include('components/ui/_file-input.html')
+                        </div>
+                        <div class="file-input file-input--error">
+                            @@include('components/ui/_file-input.html')
+                        </div>
+                        <div class="file-input file-input--uploading">
+                            @@include('components/ui/_file-input.html')
+                        </div>
+                        <div class="file-input file-input--uploaded">
+                            @@include('components/ui/_file-input.html')
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

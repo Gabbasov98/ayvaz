@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('input[type="tel"]').mask('+7 999 999-9999', { placeholder: '+7             ' });
+    $('input[type="tel"]').mask('+7 (999) 999 99 99', { autoclear: false }, { placeholder: '+7            ' });
 
 
 
@@ -68,4 +68,59 @@ function setSelect(el) {
     let input = $(el).children("input")
     $(input).val(selected)
     $(el).removeClass("custom-select--active")
+}
+
+$(".file-input input").each(function(index, el) {
+    dragFile($(this))
+})
+
+function dragFile(dropZone) {
+
+    dropZone.on('dragenter focus click', function() {
+        dropZone.addClass('is-active');
+    });
+
+    dropZone.on('dragleave blur drop', function() {
+        dropZone.removeClass('is-active');
+    });
+}
+
+
+cartCalc()
+
+
+function cartCalc() {
+
+    $(".cartcalc input").each(function(index, el) {
+        let val = +$(el).val()
+        console.log(val);
+
+        if (val === 1) {
+            $(el).siblings(".ccalc-minus").addClass("ccalc-disabled")
+        } else {
+            $(el).siblings(".ccalc-minus").removeClass("ccalc-disabled")
+        }
+    });
+
+    $('.cartcalc .ccalc-minus').click(function() {
+        let a = $(this).closest('.cartcalc').find('input').val();
+        if (a > 1) {
+            let b = +a - 1;
+            $(this).closest('.cartcalc').find('input').val(b);
+            if (b === 1) {
+                $(this).addClass("ccalc-disabled")
+            }
+        } else {
+            $(this).closest('.cartcalc').find('input').val(a);
+            $(this).addClass("ccalc-disabled")
+        }
+    });
+    $('.cartcalc .ccalc-plus').click(function() {
+        let a = $(this).closest('.cartcalc').find('input').val();
+        let b = +a + 1;
+        $(this).closest('.cartcalc').find('input').val(b);
+        if (b > 1) {
+            $(this).siblings(".ccalc-minus").removeClass("ccalc-disabled")
+        }
+    });
 }

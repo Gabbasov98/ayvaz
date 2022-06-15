@@ -1,0 +1,32 @@
+.delivery-info {
+    padding: 50px 0 120px;
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__group {
+        max-width: 670px;
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .delivery-info {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .delivery-info {
+        padding: 40px 0 80px;
+        &__title {
+            margin-bottom: 12px;
+        }
+        &__group {
+            &:not(:last-child) {
+                margin-bottom: 28px;
+            }
+        }
+    }
+}

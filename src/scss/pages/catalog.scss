@@ -49,6 +49,27 @@
             color: #fff;
         }
     }
+    &__list {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+    }
+    &__item {
+        line-height: 140%;
+        font-feature-settings: 'case' on;
+    }
+    &__img {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        max-width: 218px;
+        margin-left: auto;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
 }
 
 .catalog-categories {
@@ -588,6 +609,10 @@
             svg {
                 margin-right: 8px;
             }
+        }
+        &__list {
+            margin-top: 28px;
+            grid-template-columns: 1fr;
         }
     }
     .catalog-categories {

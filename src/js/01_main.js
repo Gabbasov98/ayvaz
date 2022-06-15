@@ -124,3 +124,14 @@ function cartCalc() {
         }
     });
 }
+
+
+$(".tab").click(function() {
+    let parent = $(this).parents(".tab-parent")
+    let path = $(this).attr("data-tabs-path")
+    $(parent).find(".tab").removeClass("tab--active")
+    $(this).addClass("tab--active")
+
+    $(parent).find(".tabs-content").removeClass("tabs-content--active")
+    $(parent).find(`.tabs-content[data-tabs-path="${path}"]`).addClass("tabs-content--active")
+})

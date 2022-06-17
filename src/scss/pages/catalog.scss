@@ -22,6 +22,9 @@
     }
     &__left {
         max-width: 770px;
+        &--full {
+            max-width: 100%;
+        }
     }
     &__right {
         max-width: 230px;
@@ -33,6 +36,11 @@
         line-height: 140%;
         font-feature-settings: 'case' on;
         margin-top: 16px;
+        li {
+            &::before {
+                background-color: #fff;
+            }
+        }
     }
     &__download {
         display: flex;
@@ -68,6 +76,33 @@
         img {
             width: 100%;
             display: block;
+        }
+    }
+    &__img2 {
+        width: 340px;
+        flex-shrink: 0;
+        margin-left: 50px;
+        img {
+            width: 100%;
+        }
+    }
+    &__props {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    &__prop {
+        max-width: 230px;
+        &-title {
+            font-weight: 500;
+            line-height: 140%;
+            font-feature-settings: 'case' on;
+        }
+        &-desc {
+            font-size: 14px;
+            line-height: 140%;
+            margin-top: 8px;
         }
     }
 }
@@ -401,6 +436,14 @@
         &__download {
             margin-top: 32px;
         }
+        &__img2 {
+            margin: 44px 0 0 0;
+            width: 370px;
+            max-width: 100%;
+        }
+        &__props {
+            gap: 20px 12px;
+        }
     }
     .catalog-categories {
         .swiper {
@@ -614,6 +657,20 @@
             margin-top: 28px;
             grid-template-columns: 1fr;
         }
+        &__img2 {
+            margin-top: 38px;
+        }
+        &__props {
+            grid-template-columns: 1fr 1fr;
+            margin-top: 28px;
+        }
+        &__prop {
+            &-desc {
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 4px;
+            }
+        }
     }
     .catalog-categories {
         padding: 20px 0;
@@ -763,7 +820,18 @@
         &__select {
             display: block;
             width: 188px;
-            margin: -20px 0 0 auto;
+            margin: 20px 0 0 0;
+            input {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .catalog-top {
+        &__props {
+            grid-template-columns: 1fr;
         }
     }
 }

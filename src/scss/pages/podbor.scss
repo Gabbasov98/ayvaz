@@ -1,0 +1,302 @@
+@import "../vars.scss";
+.auto-model {
+    padding: 50px 0 40px;
+    &__inner {
+        max-width: 770px;
+    }
+    &__title {
+        margin-bottom: 32px;
+    }
+    &__quote {
+        margin: 20px 0;
+        font-size: 20px;
+        line-height: 144%;
+        padding: 6.5px 0 6.5px 28px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            border-radius: 2px;
+            width: 4px;
+            height: 100%;
+            background-color: $primary;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.app-form {
+    padding: 40px 0 120px;
+    &__title {
+        max-width: 770px;
+    }
+    &__desc {
+        margin-top: 12px;
+        max-width: 440px;
+        font-size: 16px;
+        line-height: 140%;
+        font-feature-settings: 'case' on;
+    }
+    &__grid {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 15px));
+        gap: 20px 30px;
+    }
+    &__full {
+        grid-column: 1/3;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 8px;
+    }
+    &__checks {
+        &-wrap {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: -10px;
+            width: calc(100% + 20px);
+        }
+    }
+    &__check {
+        margin: 10px 20px 0 0;
+    }
+    .form-group {
+        margin: 0;
+    }
+    &__variative {
+        &-wrap {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .form-group {
+                margin-left: 12px;
+                flex-grow: 1;
+                max-width: 570px;
+            }
+        }
+    }
+    &__radios {
+        display: flex;
+        align-items: center;
+    }
+    &__radio {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    &__props {
+        &-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px 30px;
+        }
+    }
+    &__group {
+        margin-top: 20px;
+        &-title {
+            margin-bottom: 20px;
+        }
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(2, calc(50% - 15px));
+            gap: 20px 30px;
+        }
+    }
+    &__additional {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    &__check2 {
+        label {
+            &::before {
+                width: 16px;
+                height: 16px;
+                background-size: 8px auto;
+            }
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    &__btn {
+        margin-top: 12px;
+        width: 236px;
+        height: 57px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    &__hidden {
+        display: none;
+        .app-form__grid {
+            margin-top: 0;
+        }
+    }
+    &__more {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        line-height: 140%;
+        font-feature-settings: 'case' on;
+        font-weight: 500;
+        color: $primary;
+        svg {
+            margin-left: 16px;
+        }
+        &:hover {
+            color: $primaryHover;
+            path {
+                stroke: $primaryHover;
+            }
+        }
+    }
+}
+
+.dublicate-input {
+    position: relative;
+    &__input2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-color: transparent;
+    }
+}
+
+.fixture {
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__disabled {
+        width: 100%;
+        pointer-events: none;
+        margin-top: 24px;
+        padding-left: 27px;
+    }
+    &__enabled {
+        pointer-events: unset;
+    }
+    &__subitem {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__file {
+        width: 100%;
+        padding-left: 28px;
+        margin-top: 12px;
+        pointer-events: none;
+        .file-input {
+            max-width: 480px;
+        }
+        label {
+            border-color: $primaryHover;
+            opacity: 0.5;
+        }
+        &--active {
+            pointer-events: unset;
+            label {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .app-form {
+        &__grid {
+            gap: 20px;
+        }
+        &__props {
+            &-wrap {
+                gap: 20px;
+            }
+        }
+        &__group {
+            &-grid {
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .app-form {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+        &__full {
+            grid-column: 1/2;
+        }
+        &__group {
+            &-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        &__checks {
+            &-wrap {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .auto-model {
+        padding-top: 40px;
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__quote {
+            padding: 0 0 0 20px;
+            font-size: 18px;
+        }
+    }
+    .app-form {
+        padding-bottom: 80px;
+        &__props {
+            &-wrap {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+        &__more {
+            margin-top: 32px;
+            svg {
+                margin-left: 13px;
+                width: 12px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app-form {
+        &__variative {
+            &-wrap {
+                &>.form-group {
+                    width: 100%;
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+        &__btn {
+            width: 100%;
+            margin-top: 4px;
+        }
+    }
+    .fixture {
+        &__file,
+        &__disabled {
+            padding-left: 10px;
+        }
+    }
+}

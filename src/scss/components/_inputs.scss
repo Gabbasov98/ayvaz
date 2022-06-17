@@ -214,6 +214,11 @@ textarea {
             color: $gray;
             font-size: 16px;
         }
+        &:disabled {
+            background: #F5F5F5;
+            border-color: #f5f5f5;
+            pointer-events: none;
+        }
     }
     label {
         font-size: 14px;
@@ -234,6 +239,7 @@ textarea {
             &:after {
                 content: '*';
                 color: $red;
+                margin-left: 3px;
             }
         }
     }

@@ -29,6 +29,9 @@ fixHeader()
 $(window).scroll(function() {
     fixHeader()
 })
+$(window).resize(function() {
+    fixHeader()
+})
 
 function fixHeader() {
     if (window.innerWidth > 1200) {

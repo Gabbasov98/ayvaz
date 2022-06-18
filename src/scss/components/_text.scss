@@ -64,6 +64,31 @@ ul {
     }
 }
 
+ol {
+    counter-reset: num;
+    padding: 0 0 0 5px;
+    &:not(:last-child) {
+        margin-bottom: 18px;
+    }
+    &>li {
+        line-height: 140%;
+        font-feature-settings: 'case' on;
+        position: relative;
+        padding-left: 18px;
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+        &:before {
+            content: counter(num) ".";
+            counter-increment: num;
+            margin-right: 4px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
 @media screen and (max-width: 800px) {
     .display1,
     .display2,
@@ -83,6 +108,12 @@ ul {
         font-size: 15px;
         &:not(:last-child) {
             margin-bottom: 10px;
+        }
+    }
+    ol {
+        padding-left: 2px;
+        li {
+            padding-left: 15px;
         }
     }
 }

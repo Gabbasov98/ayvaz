@@ -233,37 +233,44 @@
 
 <section class='header-search'>
     <div class='container'>
+
         <div class='header-search__inner'>
-            <div class="header-search__best header-search__wrap">
-                <div class="header-search__title">Часто ищут</div>
-                <div class="header-search__best-items">
-                    <a href="" class="header-search__link">Муфтовый компенсатор для систем отопления ДУ 25</a>
-                    <a href="" class="header-search__link">Компенсаторы для систем отопления</a>
-                    <a href="" class="header-search__link">Под приварку КСО</a>
-                    <a href="" class="header-search__link">Для отопления под приварку</a>
-                </div>
-            </div>
-            <div class="header-search__results header-search__wrap">
-                <div class="header-search__category">
-                    <div class="header-search__title">Категории</div>
-                    <div class="header-search__links">
-                        <a href="" class="header-search__link">Сильфонные компенсаторы для систем отопления</a>
+            <!-- для пустого запроса показываем этот блок, а нижний скрываем -->
+            <div style="display: none;" class="header-search__empty header-search__wrap">По запросу «рукава металл» ничего не найдено. Попробуйте изменить запрос или свяжитесь с нами.</div>
+
+
+            <div class="header-search__noempty">
+                <div class="header-search__best header-search__wrap">
+                    <div class="header-search__title">Часто ищут</div>
+                    <div class="header-search__best-items">
+                        <a href="" class="header-search__link">Муфтовый компенсатор для систем отопления ДУ 25</a>
+                        <a href="" class="header-search__link">Компенсаторы для систем отопления</a>
+                        <a href="" class="header-search__link">Под приварку КСО</a>
+                        <a href="" class="header-search__link">Для отопления под приварку</a>
                     </div>
                 </div>
-                <div class="header-search__products">
-                    <div class="header-search__title">Товары</div>
-                    <div class="header-search__items">
-                        <div class="search-card">
-                            @@include('../cards/_search-card.html',{"img":"product"})
+                <div class="header-search__results header-search__wrap">
+                    <div class="header-search__category">
+                        <div class="header-search__title">Категории</div>
+                        <div class="header-search__links">
+                            <a href="" class="header-search__link">Сильфонные компенсаторы для систем отопления</a>
                         </div>
-                        <div class="search-card">
-                            @@include('../cards/_search-card.html',{"img":"product2"})
-                        </div>
-                        <div class="search-card">
-                            @@include('../cards/_search-card.html',{"img":"product3"})
-                        </div>
-                        <div class="search-card">
-                            @@include('../cards/_search-card.html',{"img":"product4"})
+                    </div>
+                    <div class="header-search__products">
+                        <div class="header-search__title">Товары</div>
+                        <div class="header-search__items">
+                            <div class="search-card">
+                                @@include('../cards/_search-card.html',{"img":"product"})
+                            </div>
+                            <div class="search-card">
+                                @@include('../cards/_search-card.html',{"img":"product2"})
+                            </div>
+                            <div class="search-card">
+                                @@include('../cards/_search-card.html',{"img":"product3"})
+                            </div>
+                            <div class="search-card">
+                                @@include('../cards/_search-card.html',{"img":"product4"})
+                            </div>
                         </div>
                     </div>
                 </div>

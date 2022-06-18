@@ -1,0 +1,52 @@
+@import "../vars.scss";
+.search {
+    padding: 60px 0 10px;
+    &__title {
+        margin-top: 32px;
+        max-width: 770px;
+    }
+    &__inner {
+        margin-top: 40px;
+        padding: 40px;
+        border-radius: 20px;
+        background-color: $gray2;
+        border: 1px solid $gray3;
+    }
+    &__groups {
+        margin-top: 20px;
+    }
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        &-title {
+            font-weight: 500;
+            line-height: 140%;
+            font-feature-settings: 'case' on;
+        }
+    }
+    &__item {
+        display: block;
+        margin-top: 8px;
+        line-height: 140%;
+        font-feature-settings: 'case' on;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .search {
+        padding: 40px 0 20px;
+        &__title {
+            margin-top: 28px;
+        }
+        &__inner {
+            margin-top: 32px;
+            padding: 24px 20px;
+            border-radius: 12px;
+        }
+        &__groups {
+            margin-top: 12px;
+        }
+    }
+}

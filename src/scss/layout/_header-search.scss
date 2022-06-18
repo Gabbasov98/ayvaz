@@ -21,6 +21,12 @@
         overflow-x: hidden;
         @include scroll;
     }
+    // &__noempty {
+    //     display: none;
+    // }
+    &__empty {
+        line-height: 140%;
+    }
     &__wrap {
         width: calc(100% - 310px);
         margin-left: auto;

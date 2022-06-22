@@ -136,11 +136,27 @@
             gap: 32px;
         }
         &__col {
+            &:nth-child(1) {
+                .footer__links {
+                    display: none;
+                }
+                .footer__title {
+                    display: block;
+                    &:after {
+                        content: ' товаров';
+                    }
+                }
+            }
             &:nth-child(2) {
-                display: none;
+                margin-top: -24px;
             }
         }
-        &__links2,
+        &__links2 {
+            margin-top: 8px;
+            .footer__title {
+                margin-top: 8px;
+            }
+        }
         &__title {
             display: none;
         }

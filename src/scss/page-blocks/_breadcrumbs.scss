@@ -27,6 +27,7 @@
         &__back {
             display: block;
             margin-right: 8px;
+            transform: translateY(-2px);
         }
         &__item {
             &:not(:first-child) {

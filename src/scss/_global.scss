@@ -15,3 +15,24 @@ body {
         font-size: 15px;
     }
 }
+
+.mfp-close {
+    font-size: 0 !important;
+    position: fixed;
+    top: 60px !important;
+    right: 80px !important;
+    background-image: url(../img/close2.svg) !important;
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .mfp-close {
+        top: 10px !important;
+        right: 10px !important;
+    }
+}

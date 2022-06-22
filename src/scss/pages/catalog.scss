@@ -14,6 +14,7 @@
         &__item {
             &:hover {
                 color: #fff;
+                opacity: .6;
             }
             &:last-child {
                 color: rgba(255, 255, 255, 0.6);
@@ -60,6 +61,11 @@
         &:hover {
             opacity: 0.6;
             color: #fff;
+        }
+        &--pt {
+            @media screen and (min-width: 1200px) {
+                padding-top: 48px;
+            }
         }
     }
     &__list {
@@ -119,25 +125,14 @@
         margin-bottom: 32px;
     }
     .swiper {
+        &-container {
+            overflow: hidden;
+        }
         &-wrapper {
             align-items: stretch;
         }
         &-slide {
             height: auto;
-            @media screen and (min-width: 800px) {
-                opacity: 0;
-                pointer-events: none;
-            }
-            &-active {
-                opacity: 1;
-                pointer-events: unset;
-                @media screen and (min-width: 1200px) {
-                    &+.swiper-slide, &+.swiper-slide+.swiper-slide, &+.swiper-slide+.swiper-slide+.swiper-slide {
-                        opacity: 1;
-                        pointer-events: unset;
-                    }
-                }
-            }
         }
         &-button {
             &-prev {
@@ -145,6 +140,9 @@
             }
             &-next {
                 right: -24px;
+            }
+            &-disabled {
+                opacity: 0 !important;
             }
         }
         &-scrollbar {
@@ -501,6 +499,7 @@
             line-height: 140%;
             font-feature-settings: 'case' on;
             color: $primary;
+            position: relative;
             svg {
                 margin-right: 12px;
             }
@@ -508,6 +507,19 @@
                 color: $primaryHover;
                 path {
                     stroke: $primaryHover;
+                }
+            }
+            &--selected {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    left: 14px;
+                    top: -1px;
+                    background-color: $red;
                 }
             }
         }
@@ -571,7 +583,7 @@
             overflow-y: auto;
             overflow-x: hidden;
             @include scroll;
-            padding: 0 22px 60px 45px;
+            padding: 0 30px 60px 30px;
         }
         &__group {
             &--mob {
@@ -714,7 +726,7 @@
         &__bottom {
             margin-top: 24px;
             height: calc(100% - 108px);
-            padding: 0 12px 60px 30px;
+            padding: 0 30px 60px 30px;
         }
         &__group {
             &:not(:last-child) {
@@ -816,7 +828,7 @@
         }
     }
     .seo2 {
-        padding-bottom: 40px;
+        padding: 40px 0;
     }
     .catalog-table {
         &__sort {

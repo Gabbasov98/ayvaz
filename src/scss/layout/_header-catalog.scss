@@ -2,17 +2,14 @@
 @import "../vars.scss";
 .header-catalog {
     position: fixed;
-    top: 165px;
+    top: -100%;
     left: 0;
     width: 100%;
-    z-index: 50;
+    z-index: 9;
     background-color: #fff;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .225s;
+    transition: all .425s;
     &--active {
-        opacity: 1;
-        pointer-events: unset;
+        top: 165px;
         &~.header-catalog__bg {
             @media screen and (min-width: 800px) {
                 display: block;
@@ -25,7 +22,7 @@
     &__bg {
         display: none;
         position: fixed;
-        z-index: 10;
+        z-index: 8;
         left: 0;
         top: 165px;
         height: calc(100vh - 135px);
@@ -72,7 +69,9 @@
 
 @media screen and (max-width: 1200px) {
     .header-catalog {
-        top: 200px;
+        &--active {
+            top: 200px;
+        }
         &__bg {
             top: 200px;
             height: calc(100vh - 200px);
@@ -80,7 +79,8 @@
         &__inner {
             grid-template-columns: 1fr 1fr;
             gap: 20px;
-            max-height: calc(100vh - 200px);
+            height: 100vh;
+            max-height: calc(100vh - 186px);
         }
     }
 }
@@ -89,7 +89,14 @@
     .header-catalog {
         display: none;
         height: calc(100% - 82px);
+        z-index: 50;
         top: 82px;
+        opacity: 0;
+        pointer-events: none;
+        &--active {
+            opacity: 1;
+            pointer-events: unset;
+        }
         .container {
             overflow-y: auto;
             @include scroll;

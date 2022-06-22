@@ -185,6 +185,12 @@
 }
 
 @media screen and (max-width: 576px) {
+    .contacts {
+        &__items {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
     .contacts-form {
         &__grid {
             grid-template-columns: 1fr;

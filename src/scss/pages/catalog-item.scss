@@ -106,6 +106,7 @@
         margin-top: 12px;
         .swiper {
             &-slide {
+                border-radius: 4px;
                 padding: 8px;
                 width: 70px;
                 height: 70px;
@@ -240,6 +241,9 @@
     }
     .seo {
         padding: 0 !important;
+    }
+    .docs {
+        margin-left: 0;
     }
     .subcategory {
         margin: 0;
@@ -414,6 +418,7 @@
 
 @media screen and (max-width: 800px) {
     .catalog-item {
+        padding-top: 40px;
         &__title {
             margin-top: 28px;
         }

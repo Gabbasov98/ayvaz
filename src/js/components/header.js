@@ -57,6 +57,7 @@ $(".header__burger").click(function() {
     $(this).toggleClass("header__burger--active")
     $(".header").toggleClass("header--active")
     $("body").toggleClass("fixed-body")
+    $(".header-search").removeClass("header-search--active")
 })
 
 $(".header-catalog__toggler").click(function() {

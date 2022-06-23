@@ -1,11 +1,13 @@
 $(".header__catalog-btn").click(function() {
     $(this).toggleClass("header__catalog-btn--active")
     $(".header-catalog").toggleClass("header-catalog--active")
+    $(".header").toggleClass("header--shadow")
     if ($("body").hasClass("fixed-body")) {
         $("body").removeClass("fixed-body")
         return
     }
     $("body").addClass("fixed-body")
+
 })
 
 $(".header-catalog__bg").click(function() {
@@ -23,6 +25,7 @@ function closeCatalog() {
 
 $(".header__search-btn").click(function() {
     $(this).parents(".header__search").addClass("header__search--active")
+    $(".header__search").addClass("header__search--fill")
 })
 
 fixHeader()
@@ -62,15 +65,14 @@ $(".header-catalog__toggler").click(function() {
     $(parent).find(".header-catalog__links").slideToggle()
 })
 
+$(".header__search input").click(function() {
+    $(".header-search").addClass("header-search--active")
+
+    $("body").addClass("fixed-body")
+})
+
 $(".header__search input").on("input", function() {
     let val = $(this).val()
-    if (val.length > 0) {
-        $(".header-search").addClass("header-search--active")
-        $(".header__search").addClass("header__search--fill")
-        $("body").addClass("fixed-body")
-    } else {
-        closeSearch()
-    }
 
     if (val.length > 5) {
         $(".header-search__best").hide()
@@ -86,6 +88,7 @@ function closeSearch() {
     $(".header__search input").val("")
     $(".header-search").removeClass("header-search--active")
     $(".header__search").removeClass("header__search--fill")
+    $(".header__search").removeClass("header__search--active")
     if ($(".header-catalog").hasClass("header-catalog--active") || $(".header").hasClass("header--active")) {
         return
     }

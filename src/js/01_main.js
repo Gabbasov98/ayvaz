@@ -135,3 +135,8 @@ $(".tab").click(function() {
     $(parent).find(".tabs-content").removeClass("tabs-content--active")
     $(parent).find(`.tabs-content[data-tabs-path="${path}"]`).addClass("tabs-content--active")
 })
+
+
+$(".cookies__btn").click(function() {
+    $(".cookies").remove()
+})

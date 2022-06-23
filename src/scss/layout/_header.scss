@@ -8,6 +8,9 @@ body {
     z-index: 10;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(9, 66, 117, 0.15);
+    &--shadow {
+        box-shadow: none;
+    }
     &--fix {
         position: fixed;
         top: 0;
@@ -414,8 +417,8 @@ body {
             }
             .header {
                 &__logo {
-                    left: 100%;
-                    transform: translate(-100%, -50%);
+                    left: calc(100% - 154px);
+                    // transform: translate(-100%, -50%);
                 }
                 &__consult,
                 &__cart {

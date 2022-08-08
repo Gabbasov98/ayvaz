@@ -107,8 +107,6 @@ $(".product-card").each(function(index, el) {
     let sizesLength = $(sizes).length
     let dots = `<div class="product-card__dots">...</div>`
     let allBtn = `<button class="product-card__sizes-all">показать все</button>`
-    console.log(sizesLength);
-
 
     $(sizes).find("input").attr("name", `size${index}`)
 
@@ -139,4 +137,10 @@ $(".catalog-table__sort-item").click(function() {
 $(".seo__group-btn").click(function() {
     $(this).toggleClass("seo__group-btn--active")
     $(this).parents(".seo__group").find(".seo__group-hidden").slideToggle()
+})
+
+
+$(".isToggle .filter__title").click(function () {
+    $(this).parents(".isToggle").toggleClass("isToggle--hide")
+    $(this).siblings(".filter__checks").slideToggle()
 })

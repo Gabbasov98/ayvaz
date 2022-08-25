@@ -2,7 +2,7 @@ function catalogSlider() {
     var swiper = new Swiper('.catalog-categories1 .swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
-        speed: 1500,
+        speed: 300,
         navigation: {
             nextEl: '.catalog-categories1 .swiper-button-next',
             prevEl: '.catalog-categories1 .swiper-button-prev',

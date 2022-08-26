@@ -119,27 +119,37 @@
 
 .catalog-categories {
     overflow: hidden;
-    padding: 30px 0;
     &__title {
         margin-bottom: 32px;
     }
+    &__slider{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 100%;
+            right: 100%;
+            top: 0;
+            background-color: #fff;
+            //z-index: 2;
+        }
+    }
     .swiper {
+        &-container{
+            padding: 30px 19px;
+            width: calc(100% + 38px);
+            margin-left: -19px;
+            overflow: hidden;
+
+        }
         &-wrapper {
             align-items: stretch;
         }
         &-slide {
             height: auto;
-            opacity: 0;
-            transition: all 0s;
-            &-active,
-            &-next,
-            &-next+.swiper-slide,
-            &-next+.swiper-slide+.swiper-slide{
-                opacity: 1;
-            }
-            &-prev{
-                transition: all .0s;
-            }
+            position: relative;
+
         }
         &-button {
             &-prev {
@@ -160,6 +170,9 @@
     }
     .catalog-card {
         height: 100%;
+        &:hover{
+            z-index: 3;
+        }
     }
     &__slider {
         position: relative;

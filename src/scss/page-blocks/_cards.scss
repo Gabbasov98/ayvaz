@@ -522,7 +522,9 @@
         margin-left: 16px;
     }
     &__price {
-        margin-left: 24px;
+        padding-left: 24px;
+        margin-left: auto;
+        white-space: nowrap;
     }
     &__spinner {
         position: relative;
@@ -664,6 +666,18 @@
             gap: 8px;
             &-item {
                 font-size: 14px;
+                &--pressure{
+                    &::before{
+                        content: "Давление ";
+                        margin-right: 5px;
+                    }
+                }
+                &--diameter{
+                    &::before{
+                        content: "Диаметр ";
+                        margin-right: 5px;
+                    }
+                }
             }
         }
         &__price {
@@ -732,14 +746,15 @@
             margin: 0;
         }
     }
-}
-
-@media screen and (max-width: 576px) {
     .catalog-row {
         &__props {
             grid-template-columns: 1fr 1fr;
         }
     }
+}
+
+@media screen and (max-width: 576px) {
+
     .search-card {
         flex-wrap: wrap;
         &__title {
@@ -778,6 +793,7 @@
             bottom: 62px;
             left: 100px;
             margin: 0;
+            padding: 0;
         }
         &__deleting {
             padding-left: 0;

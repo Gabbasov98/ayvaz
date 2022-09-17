@@ -12,6 +12,9 @@
         font-weight: 500;
         line-height: 140%;
         font-feature-settings: 'case' on;
+        @media screen and (min-width: 800px){
+            pointer-events: none;
+        }
     }
     &__links {
         margin-top: 16px;

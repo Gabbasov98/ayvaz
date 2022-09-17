@@ -60,6 +60,8 @@
     &__check {
         margin-top: 20px;
         input {
+            width: 16px;
+            height: 20px;
             &:checked+label {
                 &::before {
                     background-size: 8px;

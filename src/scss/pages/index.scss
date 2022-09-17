@@ -438,15 +438,22 @@
     }
     .swiper {
         &-wrapper {
+            align-items: stretch;
             @media screen and (min-width: 1200px) {
                 transform: unset !important;
             }
+        }
+        &-slide{
+            height: auto;
         }
         &-scrollbar {
             @media screen and (min-width: 1200px) {
                 display: none;
             }
         }
+    }
+    .done-card{
+        height: 100%;
     }
 }
 
